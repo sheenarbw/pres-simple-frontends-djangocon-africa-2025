@@ -35,6 +35,11 @@
 			font-family: "Exo 2", sans-serif !important;
 
 		}
+
+		.hljs {
+			font-size: 40px; 	
+			line-height:50px;	
+		}
 	</style>
 
 </head>
@@ -221,8 +226,9 @@
 				<ul>
 					<li class="fragment">Tiny, simple JS library</li>
 					<li class="fragment">Allows you to create rich frontend experiences</li>
-					<li class="fragment">By adding afew simple attributes to HTML</li>
+					<li class="fragment">By adding a few simple attributes to HTML</li>
 					<li class="fragment">Works on slow devices</li>
+					<li class="fragment">Conditionally re-render parts of the screen</li>
 				</ul>
 			</section>
 
@@ -230,10 +236,14 @@
 					<h2>How?</h2>
 
 					<pre><code class="hljs html" data-line-numbers data-trim>
-						<button hx-post="/clicked" hx-swap="outerHTML">
-							Click Me
-						</button>
+						&lt;button 
+							hx-post=&quot;/clicked&quot; 
+							hx-swap=&quot;outerHTML&quot;&gt;
+								Click Me
+						&lt;/button&gt;
 					</code></pre>
+
+					
 			</section>
 
 			<section>
@@ -253,20 +263,16 @@
 			<section>
 				<h2>State management with Alpine.JS</h2>
 				<pre><code class="hljs html" data-line-numbers data-trim>
-					<div x-data="{ open: false }">
-						<button @click="open = true">Expand</button>
-					
-						<span x-show="open">
+					&lt;div x-data="{ open: false }">
+						&lt;button @click="open = true">
+							Expand
+						&lt;/button>
+						&lt;span x-show="open">
 							Content...
-						</span>
-					</div>
+						&lt;/span>
+					&lt;/div>
 				</code></pre>
 			</section>
-
-			<section>
-				<h2>Testing with Playwright</h2>
-			</section>
-
 
 			<section>
 				<h2>What is simplicity worth?</h2>
