@@ -78,9 +78,6 @@
 				<h1>So you want a modern frontend for your Python web app?</h1>
 			</section>
 
-
-
-
 			<section>
 				<h2>Once upon a time</h2>
 				<img src="images/web1.jpg" />
@@ -88,11 +85,8 @@
 			</section>
 
 			<section>
-				Architecture:
-
-				Fileserver + Clients
-
-				Webserver + Clients
+				<h2>Architecture</h2>
+				<img src="images/web1.drawio.svg" height="600" />
 			</section>
 
 
@@ -133,6 +127,11 @@
 
 			<section>
 				<h2>What are we really trying to achieve?</h2>
+
+				<ul>
+					<li class="fragment">UX</li>
+					<li class="fragment">DX</li>
+				</ul>
 			</section>
 
 			<section>
@@ -161,13 +160,13 @@
 			</section>
 
 			<section>
-				Current architecture
+				<h2>Web 2.0 Architecture</h2>
+				<img src="images/web2.drawio.svg" height="500" />
+			</section>
 
-				Backend: API
-				Frontend: React/Vue/etc
-
-				Example: React front
-				Example 2: NextJS front
+			<section>
+				<h2>Real Example</h2>
+				<img src="images/web2-concrete.drawio.svg" height="500" />
 			</section>
 
 			<section>
@@ -209,7 +208,7 @@
 			</section>
 
 			<section>
-				<h2>What would we need to do to HTML to make it good enough to support the modern web?</h2>
+				<h2>How can we make HTML good enough?</h2>
 
 
 
@@ -219,25 +218,33 @@
 				<h2>We need...</h2>
 				<ul>
 					<li class="fragment">Fetch information from backend</li>
-					<li class="fragment">Conditionally re/render parts of the screen</li>
 					<li class="fragment">Sockets... sometimes</li>
+					<li class="fragment">Conditionally re/render parts of the screen</li>
 					<li class="fragment">State management... sometimes</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Two simple tools</h2>
+				<ul>
+					<li class="fragment">HTMX</li>
+					<li class="fragment">Alpine.Js</li>
 				</ul>
 			</section>
 
 			<section>
 				<h1>Introducing HTMX</h1>
 				<ul>
-					<li class="fragment">Tiny, simple JS library</li>
-					<li class="fragment">Fetch stuff from backend based on events</li>
+					<li class="fragment">Fetch HTML partials from backend</li>
 					<li class="fragment">Conditionally re-render parts of the screen</li>
 					<li class="fragment">By adding a few simple attributes to HTML</li>
+					<li class="fragment">Tiny, simple JS library</li>
 					<li class="fragment">Works on slow + old devices</li>
 				</ul>
 			</section>
 
 			<section>
-				<h2>How?</h2>
+				<h2>Hello world!</h2>
 
 				<pre><code class="hljs html" data-line-numbers data-trim>
 						&lt;button 
@@ -252,7 +259,7 @@
 
 			<section>
 				<h2>Versus React</h2>
-				<a href="https://chatgpt.com/share/672dc3e5-a260-8002-a7d6-51302bc03b19">see chat</a>
+				<a href="react-sample.js">Sample</a>
 			</section>
 
 			<!-- <section>
@@ -286,33 +293,32 @@
 
 				<h2>My project</h2>
 
-				<img src="images/fullstack_real.drawio.svg" height="300" />
+				<img src="images/web2-concrete.drawio.svg" height="600" />
 
 			</section>
 			<section>
 
 				<h2>My project</h2>
 
-				<img src="images/fullstack_better.drawio.svg" height="300" />
+				<img src="images/htmx-based-arch.drawio.svg" height="300" />
 
 
 			</section>
 
-			<section>
+			<!-- <section>
 				<h2>Introduced HTMX</h2>
 
 				<ul>
 					<li class="fragment">Everyone was productive</li>
 					<li class="fragment">I was more productive too</li>
 				</ul>
-			</section>
+			</section> -->
 
 			<section>
 				<h2>This is what winning feels like</h2>
 				<ul>
+					<li class="fragment">My DX ++</li>
 					<li class="fragment">Same team members => more value</li>
-					<li class="fragment">Code base smaller + simpler</li>
-					<li class="fragment">Fewer weird bugs => less rework and troubleshooting</li>
 					<li class="fragment">Everyone == Full stack (including juniors!)</li>
 				</ul>
 			</section>
@@ -333,17 +339,16 @@
 			<section>
 				<h2>Remember: Organisations that do web dev</h2>
 				<ul>
-					<li class="fragment">Fullstack devs are expensive</li>
-					<li class="fragment">Backend team / Frontend team</li>
-					<li class="fragment">Teamwork complexities + friction (add more tools? GraphQL?)</li>
-					<li class="fragment">Extra handoffs, more task juggling</li>
-					<li class="fragment">Add project management capacity</li>
+					<li>Fullstack devs are expensive</li>
+					<li>Backend team / Frontend team</li>
+					<li>Teamwork complexities + friction (add more tools? GraphQL?)</li>
+					<li>Extra handoffs, more task juggling</li>
+					<li>Add project management capacity</li>
 				</ul>
 			</section>
 
 
 			<section>
-
 				<h2><a href="https://en.wikipedia.org/wiki/Conway%27s_law">Conway's law</a></h2>
 
 				Organizations which design systems (in the broad sense used here) are constrained to produce designs
