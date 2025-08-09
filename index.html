@@ -75,7 +75,8 @@
 	<div class="reveal">
 		<div class="slides">
 			<section>
-				<h1>So you want a modern frontend for your Python web app?</h1>
+				<h1>A modern frontend for your Python web</h1>
+				<h2>The simple way</h2>
 			</section>
 
 			<section>
@@ -124,7 +125,7 @@
 				<p class="fragment">What if we did the opposite?</p>
 			</section>
 
-
+			<!-- 
 			<section>
 				<h2>What are we really trying to achieve?</h2>
 
@@ -132,7 +133,7 @@
 					<li class="fragment">UX</li>
 					<li class="fragment">DX</li>
 				</ul>
-			</section>
+			</section> -->
 
 			<section>
 				<h2>Hi, I'm Sheena</h2>
@@ -176,14 +177,14 @@
 					</li>
 					<li class="fragment">Full stack developers need a lot of skills</li>
 					<li class="fragment">Full stack dev - large context, lots of switching, testing is complicated</li>
-					<li class="fragment">Deployment and versioning (Moar tools! NextJS?)</li>
+					<li class="fragment">Deployment and versioning (Moar tools! NextJS? GraphQL?)</li>
 				</ul>
 			</section>
 
 			<section>
 				<h2>Organisations that do web dev</h2>
 				<ul>
-					<li class="fragment">Fullstack devs are expensive</li>
+					<li class="fragment">Fullstack devs are expensive / magic unicorns</li>
 					<li class="fragment">Backend team / Frontend team</li>
 					<li class="fragment">Teamwork complexities + friction (add more tools? GraphQL?)</li>
 					<li class="fragment">Extra handoffs, more task juggling</li>
@@ -194,7 +195,7 @@
 			<section>
 				<h2>Where does that leave the junior dev?</h2>
 				<ul>
-					<li class="fragment">Web dev used to be a gateway to Software Eng</li>
+					<li class="fragment">Web dev used to be a gateway to software eng</li>
 					<li class="fragment">Orgs don't hire juniors - only intermediate and upwards (expensive)</li>
 					<li class="fragment">Juniors struggle to get the xp they need to be useful - future talent vaccume
 					</li>
@@ -232,27 +233,27 @@
 				</ul>
 			</section>
 
+
 			<section>
-				<h1>Introducing HTMX</h1>
+				<h1>HTMX ==</h1>
 				<ul>
-					<li class="fragment">Fetch HTML partials from backend</li>
-					<li class="fragment">Conditionally re-render parts of the screen</li>
-					<li class="fragment">By adding a few simple attributes to HTML</li>
 					<li class="fragment">Tiny, simple JS library</li>
 					<li class="fragment">Works on slow + old devices</li>
+					<li class="fragment">Adds a few simple attributes to HTML</li>
+					<li class="fragment">Fetch HTML partials from backend</li>
+					<li class="fragment">Conditionally re-render parts of the screen</li>
 				</ul>
 			</section>
-
 			<section>
-				<h2>Hello world!</h2>
+				<h2>Hello HTMX!</h2>
 
 				<pre><code class="hljs html" data-line-numbers data-trim>
-						&lt;button 
-							hx-post=&quot;/clicked&quot; 
-							hx-swap=&quot;outerHTML&quot;&gt;
-								Click Me
-						&lt;/button&gt;
-					</code></pre>
+					&lt;button 
+					hx-post=&quot;/clicked&quot; 
+					hx-swap=&quot;outerHTML&quot;&gt;
+					Click Me
+					&lt;/button&gt;
+				</code></pre>
 
 
 			</section>
@@ -295,6 +296,15 @@
 
 				<img src="images/web2-concrete.drawio.svg" height="600" />
 
+			</section>
+
+			<section>
+				<h2>Enter HTMX...</h2>
+				<ul>
+					<li class="fragment">"HTMX is fast + works on old devices"</li>
+					<li class="fragment">I experimented</li>
+					<li class="fragment">Got my team to try it out</li>
+				</ul>
 			</section>
 			<section>
 
